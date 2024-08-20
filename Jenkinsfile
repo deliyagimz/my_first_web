@@ -23,14 +23,7 @@ pipeline {
             }
         }
 
-        stage('Push Docker Image') {
-            steps {
-                script {
-                    // Push Docker image to a Docker registry
-                    sh 'docker push my-website-image '
-                }
-            }
-        }
+       
 
         stage('Deploy') {
             steps {
